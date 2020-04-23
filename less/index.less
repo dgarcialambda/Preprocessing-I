@@ -57,134 +57,183 @@ html, body {
     height: 100%;
 }
 body {
-	background-color: whitesmoke;
-	font-family: Arial, Helvetica, sans-serif;
+	background-color:#F4DADA;
+	margin: none;
+	
+	
 }
-.nav-bar {
-	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 5%;
-	font-size: 2.0rem;
-	
-
-	
-	a{
-	text-decoration: none;
-	color: black;
-	margin-block-end: 5%;
-	
-	}
-}
-	.container {
-	background-color: silver;
-	padding: 3%;
-	margin: 10%;
-	border:outset;
-	border-radius: 10%;
-	
-		.image-one img {
-		border: outset;
-		width: 30%;
-		height: 20%;
-		margin: 3%;
-		border-radius: 10%;
-		}
-		.introduction h1 {
+	.nav-bar {
+		padding: 3%;
 		font-size: 1.5rem;
-		margin-top: %;
-		font-weight: bold;
+		text-align: center;
+		a {
+			display: inline-block;
+			text-decoration: none;	
+			padding: 1%;
+			color: whitesmoke;
+			margin-bottom: 1%;
+			background-color: #363636;
+			border-radius: 10%;
+		
 		}
-		h2{
-			font-size: 1.0rem;
-			margin-top: 3%;
+		a:hover {
+			background-color: #F4DADA;
+			color: #363636;
 		}
-		p {
-			font-style: italic;
-			margin-top: 5%;
-		}
-		.btn {
-			display:flex;
-			justify-content: flex-end;
-			align-items: flex-end;
-			margin-top:10%;
-		}
-	}
-		.container-two {
-		margin: 2%;
+}
+		.container{
+		background-color: #FFBCBC;
+		height:100%;
 		display:flex;
+		flex-direction: row;
 		justify-content: space-between;
 		
-			h3 {
-			font-size: 1.5rem;
+		
+		
+		.image-one img {
+			border-radius: 50%;
+			width: 100%;
+			height: 110%;
+			padding: 15%;
 			
 		}
-			p {
-			margin: 5%;
-			justify-content: left;
+		.introduction {
+			width: 55%;
+			padding: 10%;
+			background-color: #363636;
+		}
+		h1 {
+			color: whitesmoke;
+			font-size: 2.6rem;
+			margin-top: 1%;
+		}
+		h2{
+			
+			margin-top: 3%;
+			padding: 1%;
+			text-align: center;
+			color: whitesmoke;
+			font-size: 1.6rem;
 			
 		}
-			.list {
-				width:35%;
+		p {
+			margin-top: 3%;
+			padding: 1%;
+			color: whitesmoke;
+		}
+		.btn {
+			margin-top: 8%;
+			text-align: center;
+		}
+		button {
+			background-color: #FFBCBC;
+			color:white;
+			width: 100px;
+			height: 50px; 
+		}
+		button:hover {
+			background-color: #F4DADA;
+			color: #363636;
+		}
+	
+
+}
+		.container-two {
+			display:flex;
+			flex-direction: row;
+			justify-content: space-between;
+			background-color: #363636;
+			margin-top: 1%;
+			
+				h3 {
+				font-size: 2.6rem;
+				color: whitesmoke;
+				margin: 1%;
+				}
+				p {
+					margin: 3.9%;
+					color: whitesmoke;
+				}
+				.list{
+					background-color: #FFBCBC;
+					width: 800%;
+					padding: 1%;
 				
-		
-			h4 {
-			font-size: 1.5rem;
-			margin-bottom: 1%;
-		}
-			ul {
-			border: white solid 1px;
-			height: 50%;
-		
-		}
-			li {
-			border: white solid 1px;
-			height:50%;
+				}
+				h4 {
+					font-size: 2.6rem;
+					color: whitesmoke;
+				}
+				ul {
+					padding: 1%;
+
+				}
+				li{
+					padding: 3%;
+					font-size: 1.3rem;
+					color: whitesmoke;
+				}
+				li:hover {
+					color: #363636
+				}
+}
+			.table {
+				height: 30%;
+				margin-left: 9%;
+				table {
+					width: 100%;
+					
+					
+				}
+				th {
+					font-size: 2.6rem;
+					padding: 3%;
+					text-align: center;
+					
+					
+				}
+				td{
+					font-size: 1.6rem;
+					text-align: center;
+				}
 			
-			
-		}
+}
+			.end {
+				height: 10%;
+				background-color: #363636;
+				padding: 2%;
+				h5 {
+					text-align: center;
+					color: whitesmoke;
+					font-size: 1.0rem;
+		
 	}
 }
-		.table {
-			display:flex;
-			text-align:center;
-			font-size: 1.5rem;
-			table{
-				width: 100%;
-				margin:17%;
-				padding: 5%;
-				height:100%;
-			}
-			th{
-			height: 50%;
-			border: solid white 1px;	
-			}
-			tr{
-				border: solid white 1px;
-				height: 50%;	
-			}
-			td {
+@media (max-width: 800px) {
 
-				
-			}
+}
+@media (max-width: 500px) {
+	.nav-bar {
+		padding: 5%;
+		font-size: 1.5rem;
+		text-align: center;
+		a {
+			display: block;
+			text-decoration: none;	
+			padding: 1%;
+			color: whitesmoke;
+			margin-bottom: 1%;
 			
-
-		
-		
+			
 		
 		}
-	.end {
-		background-color: silver;
-		height: 5%;
-		padding: 3%;
-		margin: none;
-
-		h5 {
-			text-align: center;
-			font-weight: bold;
-			
+		a:hover {
+			background-color: #F4DADA;
+			color: #363636;
 		}
-	}
+}
 
+
+}
 
 
