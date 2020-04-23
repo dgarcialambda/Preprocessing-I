@@ -142,24 +142,27 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 3%;
-  font-size: 1.3rem;
+  margin-top: 5%;
+  font-size: 2rem;
 }
 .nav-bar a {
   text-decoration: none;
   color: black;
-  justify-content: space-between;
+  margin-block-end: 5%;
 }
 .container {
   background-color: silver;
-  padding: 5%;
-  margin-bottom: 3%;
+  padding: 3%;
+  margin: 10%;
+  border: outset;
+  border-radius: 10%;
 }
 .container .image-one img {
   border: outset;
-  width: 50%;
+  width: 30%;
   height: 20%;
   margin: 3%;
+  border-radius: 10%;
 }
 .container .introduction h1 {
   font-size: 1.5rem;
@@ -176,9 +179,9 @@ body {
 }
 .container .btn {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: 3%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 10%;
 }
 .container-two {
   margin: 2%;
@@ -192,37 +195,47 @@ body {
   margin: 5%;
   justify-content: left;
 }
-.container-two h4 {
+.container-two .list {
+  width: 35%;
+}
+.container-two .list h4 {
   font-size: 1.5rem;
   margin-bottom: 1%;
 }
-.container-two ul {
+.container-two .list ul {
   border: white solid 1px;
+  height: 50%;
 }
-.container-two li {
+.container-two .list li {
   border: white solid 1px;
-  background-color: silver;
+  height: 50%;
 }
 .table {
-  margin: 10%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
 }
 .table table {
-  border-collapse: collapse
-			width: 100%;
-}
-.table table,
-.table th,
-.table td {
-  border: 1px solid black;
+  width: 100%;
+  margin: 17%;
+  padding: 5%;
+  height: 100%;
 }
 .table th {
-  height: 50px;
+  height: 50%;
+  border: solid white 1px;
 }
-.table th,
-.table td {
-  padding: 15px;
-  text-align: left;
+.table tr {
+  border: solid white 1px;
+  height: 50%;
+}
+.end {
+  background-color: silver;
+  height: 5%;
+  padding: 3%;
+  margin: none;
+}
+.end h5 {
+  text-align: center;
+  font-weight: bold;
 }
