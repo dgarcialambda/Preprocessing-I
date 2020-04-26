@@ -157,9 +157,6 @@ body {
   color: #363636;
 }
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   background-color: #FFBCBC;
   height: 100%;
 }
@@ -377,4 +374,9 @@ body {
     text-align: center;
     padding: 5%;
   }
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

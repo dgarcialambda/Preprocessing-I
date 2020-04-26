@@ -79,9 +79,7 @@ body {
 	}
 }
 .container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	.flex-container()
 	background-color:@varible-blush;
 	height:100%;
 	.image-one img {
@@ -97,21 +95,17 @@ body {
 		background-color: @variable-gray;
 	}
 	h1 {
-		color: @variable-white;
-		font-size: 2.6rem;
-		margin-top: 1%;
+		.type-three()
 	}
 	h2 {
 			
-		margin-top: 3%;
-		padding: 1%;
+		.type-one()
 		text-align: center;
 		color: @variable-white;
 		font-size: 1.6rem;
 	}
 	p {
-		margin-top: 3%;
-		padding: 1%;
+		.type-one()
 		color: @variable-white;
 	}
 	.btn {
@@ -130,15 +124,11 @@ body {
 	}
 }
 .container-two {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	.flex-container()
 	background-color:@variable-gray ;
 	margin-top: 1%;
 	h3{
-		font-size: 2.6rem;
-		color: @variable-white;
-		margin: 1%;
+		.type-three()
 	}
 	p {
 		margin: 3.9%;
@@ -225,8 +215,7 @@ body {
 			margin: none;
 		}
 		h1 {
-			color: @variable-white;
-			font-size: 1.6rem;
+			.type-two()
 			text-align: center;
 			
 		}
@@ -239,7 +228,6 @@ body {
 			text-align: left;
 			font-size: 0.9rem;
 			padding: 1%;
-			
 			color: @variable-white;
 		}
 		.btn {
@@ -265,8 +253,7 @@ body {
 		margin-top: 140%;
 		
 		h3{
-			font-size: 2.6rem;
-			color: @variable-white;
+			.type-two()
 			margin: 1%;
 			padding: 1%;
 		}
@@ -282,8 +269,7 @@ body {
 			
 		}
 		h4 {
-			font-size: 2.6rem;
-			color:@variable-white;
+			.type-two()
 		}
 		ul {
 			padding: 1%;
@@ -321,4 +307,23 @@ body {
 @varible-blush:#FFBCBC;
 @variable-white: whitesmoke;
 
+.flex-container {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.type-one {
+	margin-top: 3%;
+	padding: 1%;
+}
+.type-two {
+	color: @variable-white;
+	font-size: 1.6rem;
+}
+.type-three{
+	color: @variable-white;
+		font-size: 2.6rem;
+		margin-top: 1%;
+}
 
