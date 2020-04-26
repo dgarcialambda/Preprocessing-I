@@ -157,11 +157,11 @@ body {
   color: #363636;
 }
 .container {
-  background-color: #FFBCBC;
-  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #FFBCBC;
+  height: 100%;
 }
 .container .image-one img {
   border-radius: 50%;
@@ -241,21 +241,19 @@ body {
 .container-two li:hover {
   color: #363636;
 }
-.table {
-  height: 30%;
-  margin-left: 9%;
+.work {
+  margin-top: 3%;
 }
-.table table {
-  width: 100%;
-}
-.table th {
+.work h6 {
   font-size: 2.6rem;
-  padding: 3%;
   text-align: center;
 }
-.table td {
-  font-size: 1.6rem;
+.work li {
+  display: inline-block;
+  margin-left: 8%;
+  font-size: 2.6rem;
   text-align: center;
+  padding: 5%;
 }
 .end {
   height: 10%;
@@ -267,113 +265,116 @@ body {
   color: whitesmoke;
   font-size: 1rem;
 }
-.some-class {
-  display: flex;
+@media (max-width: 800px) {
+  width: 100%;
 }
 @media (max-width: 500px) {
+  width: 100%;
   .nav-bar {
-    padding: 5%;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .nav-bar a {
-    display: block;
-    text-decoration: none;
-    padding: 1%;
-    color: whitesmoke;
-    margin-bottom: 1%;
-    background-color: #F4DADA;
-  }
-  .nav-bar a:hover {
-    background-color: #F4DADA;
-    color: #363636;
+    display: flex;
   }
   .container {
     display: flex;
     flex-direction: column;
+    background-color: #FFBCBC;
+    height: 45%;
     width: 100%;
-    margin: none;
-    padding: none;
-    height: 35%;
-  }
-  .container .image-one {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .container .image-one img {
-    height: 100%;
-    width: 70%;
-    padding: 10%;
+    border-radius: 50%;
+    width: 80%;
+    height: 90%;
+    padding: 20%;
+    margin-left: 10%;
+    margin-top: 10%;
   }
   .container .introduction {
     display: flex;
     flex-direction: column;
-    height: 150%;
     width: 100%;
-    padding: 3%;
+    background-color: #363636;
+    height: 159%;
     margin: none;
   }
-  .container .introduction h1 {
-    font-size: 2rem;
+  .container h1 {
+    color: whitesmoke;
+    font-size: 1.6rem;
     text-align: center;
   }
-  .container .introduction h2 {
+  .container h2 {
+    text-align: center;
+    color: whitesmoke;
     font-size: 1rem;
-    font-weight: none;
   }
-  .container .introduction p {
+  .container p {
+    text-align: left;
     font-size: 0.9rem;
-    text-align: justify;
+    padding: 1%;
+    color: whitesmoke;
   }
-  .container .introduction .btn {
-    padding: 5%;
+  .container .btn {
+    text-align: center;
+  }
+  .container button {
+    background-color: #FFBCBC;
+    color: white;
+    width: 100px;
+    height: 50px;
+  }
+  .container button:hover {
+    background-color: #F4DADA;
+    color: #363636;
   }
   .container-two {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 50%;
-    margin-top: 127%;
+    justify-content: space-between;
     background-color: #FFBCBC;
+    margin-top: 140%;
   }
   .container-two h3 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2.6rem;
+    color: whitesmoke;
+    margin: 1%;
     padding: 1%;
   }
   .container-two p {
-    font-size: 0.9rem;
-    text-align: justify;
+    margin: 3.9%;
     padding: 1%;
+    color: whitesmoke;
   }
   .container-two .list {
-    width: 100%;
     background-color: #363636;
+    width: 100%;
+    padding: 1%;
   }
-  .container-two .list h4 {
-    font-size: 2rem;
+  .container-two h4 {
+    font-size: 2.6rem;
+    color: whitesmoke;
+  }
+  .container-two ul {
+    padding: 1%;
+  }
+  .container-two li {
     padding: 3%;
+    font-size: 1.3rem;
+    color: whitesmoke;
   }
-  .container-two .list li {
-    font-size: 1rem;
-  }
-  .container-two .list li:hover {
+  .container-two li:hover {
     color: #F4DADA;
   }
-  .table table {
-    width: 100%;
-    height: 50%;
-    margin-top: 65%;
+  .work {
+    margin-top: 3%;
   }
-  .table th {
-    font-size: 2;
-    text-align: justify;
-    padding: 5%;
-    text-decoration: underline;
-  }
-  .table td {
-    font-size: 1.5rem;
+  .work h6 {
+    font-size: 2rem;
     text-align: center;
+  }
+  .work li {
+    display: inline-block;
+    margin-left: 1%;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5%;
   }
 }
